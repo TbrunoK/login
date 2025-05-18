@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.logo {
+  margin-left: 68px;
+  margin-top: 55px;
+}
+
+.container-principal {
+  width: 720px;
+  height: 1020px;
+  margin-left: 90px;
+  justify-content: center;
+}
+
+.img-principal {
+  margin-top: 48px;
+  margin-left: 20px;
+  width: 663px;
+  height: 624px;
+}
+
+.texto-descricao {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 67px;
+
+  font-family: "poppins", sans-serif;
+  font-weight: semi-bold;
+  font-size: 32px;
+  width: 663px;
+}
+
+.detail {
+  display: flex;
+  margin: 85px auto
+  
+}
