@@ -5,39 +5,116 @@
   scroll-behavior: smooth;
 }
 
-.logo {
-  margin-left: 68px;
-  margin-top: 55px;
+/* Variáveis */
+
+:root {
+  font-family: "poppins", sans-serif;
+
+  --slate-950: #020617;
+  --slate-900: #0f172a;
+  --slate-800: #1e293b;
+  --slate-700: #334155;
+  --slate-600: #475569;
+  --slate-500: #64748b;
 }
 
+/* Container principal */
 .container-principal {
-  width: 720px;
-  height: 1020px;
-  margin-left: 90px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+/*container esquerda  */
+.container-left {
+  height: 100vh;
+}
+
+.logo {
+  display: block;
+  margin-top: 6%;
+  margin-left: 10%;
 }
 
 .img-principal {
-  margin-top: 48px;
-  margin-left: 20px;
-  width: 663px;
-  height: 624px;
+  display: grid;
+  justify-content: center;
+  gap: 5%;
 }
 
 .texto-descricao {
-  display: flex;
-  justify-content: center;
+  margin-inline: auto;
 
-  margin-top: 67px;
-
-  font-family: "poppins", sans-serif;
   font-weight: semi-bold;
-  font-size: 32px;
-  width: 663px;
+  color: var(--slate-800);
+  font-size: 2rem;
 }
 
 .detail {
+  margin-inline: auto;
+}
+
+/* container direita */
+
+.container-right {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  padding: 20% 8%;
+  gap: 5%;
+  background: #f1f5f9;
+}
+
+.texto-inicial h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--slate-800);
+}
+
+.texto-inicial span {
+  text-decoration: underline;
+}
+
+.inputs {
+  margin-top: 10%;
+}
+
+input {
   display: flex;
-  margin: 85px auto
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5%;
+  width: 65%;
+  gap: 60%;
+}
+
+.input-senha {
+  position: relative;
+  width: 65%;
+}
+
+.input-senha input {
+  width: 100%;
   
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.visibilidade {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.visibilidade:hover {
+  opacity: 1;
 }
